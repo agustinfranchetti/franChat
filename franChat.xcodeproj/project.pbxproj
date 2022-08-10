@@ -1,0 +1,588 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		DB22C84228A43F230073AC1D /* franChatApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB22C84128A43F230073AC1D /* franChatApp.swift */; };
+		DB22C84428A43F230073AC1D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB22C84328A43F230073AC1D /* ContentView.swift */; };
+		DB22C84628A43F240073AC1D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DB22C84528A43F240073AC1D /* Assets.xcassets */; };
+		DB22C84928A43F240073AC1D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DB22C84828A43F240073AC1D /* Preview Assets.xcassets */; };
+		DB22C85328A43F240073AC1D /* franChatTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB22C85228A43F240073AC1D /* franChatTests.swift */; };
+		DB22C85D28A43F240073AC1D /* franChatUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB22C85C28A43F240073AC1D /* franChatUITests.swift */; };
+		DB22C85F28A43F240073AC1D /* franChatUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB22C85E28A43F240073AC1D /* franChatUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		DB22C84F28A43F240073AC1D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DB22C83628A43F230073AC1D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DB22C83D28A43F230073AC1D;
+			remoteInfo = franChat;
+		};
+		DB22C85928A43F240073AC1D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DB22C83628A43F230073AC1D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DB22C83D28A43F230073AC1D;
+			remoteInfo = franChat;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		DB22C83E28A43F230073AC1D /* franChat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = franChat.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DB22C84128A43F230073AC1D /* franChatApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = franChatApp.swift; sourceTree = "<group>"; };
+		DB22C84328A43F230073AC1D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		DB22C84528A43F240073AC1D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		DB22C84828A43F240073AC1D /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		DB22C84E28A43F240073AC1D /* franChatTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = franChatTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DB22C85228A43F240073AC1D /* franChatTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = franChatTests.swift; sourceTree = "<group>"; };
+		DB22C85828A43F240073AC1D /* franChatUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = franChatUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DB22C85C28A43F240073AC1D /* franChatUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = franChatUITests.swift; sourceTree = "<group>"; };
+		DB22C85E28A43F240073AC1D /* franChatUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = franChatUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DB22C83B28A43F230073AC1D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DB22C84B28A43F240073AC1D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DB22C85528A43F240073AC1D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		DB22C83528A43F230073AC1D = {
+			isa = PBXGroup;
+			children = (
+				DB22C84028A43F230073AC1D /* franChat */,
+				DB22C85128A43F240073AC1D /* franChatTests */,
+				DB22C85B28A43F240073AC1D /* franChatUITests */,
+				DB22C83F28A43F230073AC1D /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		DB22C83F28A43F230073AC1D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DB22C83E28A43F230073AC1D /* franChat.app */,
+				DB22C84E28A43F240073AC1D /* franChatTests.xctest */,
+				DB22C85828A43F240073AC1D /* franChatUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DB22C84028A43F230073AC1D /* franChat */ = {
+			isa = PBXGroup;
+			children = (
+				DB22C84128A43F230073AC1D /* franChatApp.swift */,
+				DB22C84328A43F230073AC1D /* ContentView.swift */,
+				DB22C84528A43F240073AC1D /* Assets.xcassets */,
+				DB22C84728A43F240073AC1D /* Preview Content */,
+			);
+			path = franChat;
+			sourceTree = "<group>";
+		};
+		DB22C84728A43F240073AC1D /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				DB22C84828A43F240073AC1D /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		DB22C85128A43F240073AC1D /* franChatTests */ = {
+			isa = PBXGroup;
+			children = (
+				DB22C85228A43F240073AC1D /* franChatTests.swift */,
+			);
+			path = franChatTests;
+			sourceTree = "<group>";
+		};
+		DB22C85B28A43F240073AC1D /* franChatUITests */ = {
+			isa = PBXGroup;
+			children = (
+				DB22C85C28A43F240073AC1D /* franChatUITests.swift */,
+				DB22C85E28A43F240073AC1D /* franChatUITestsLaunchTests.swift */,
+			);
+			path = franChatUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		DB22C83D28A43F230073AC1D /* franChat */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DB22C86228A43F240073AC1D /* Build configuration list for PBXNativeTarget "franChat" */;
+			buildPhases = (
+				DB22C83A28A43F230073AC1D /* Sources */,
+				DB22C83B28A43F230073AC1D /* Frameworks */,
+				DB22C83C28A43F230073AC1D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = franChat;
+			productName = franChat;
+			productReference = DB22C83E28A43F230073AC1D /* franChat.app */;
+			productType = "com.apple.product-type.application";
+		};
+		DB22C84D28A43F240073AC1D /* franChatTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DB22C86528A43F240073AC1D /* Build configuration list for PBXNativeTarget "franChatTests" */;
+			buildPhases = (
+				DB22C84A28A43F240073AC1D /* Sources */,
+				DB22C84B28A43F240073AC1D /* Frameworks */,
+				DB22C84C28A43F240073AC1D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DB22C85028A43F240073AC1D /* PBXTargetDependency */,
+			);
+			name = franChatTests;
+			productName = franChatTests;
+			productReference = DB22C84E28A43F240073AC1D /* franChatTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		DB22C85728A43F240073AC1D /* franChatUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DB22C86828A43F240073AC1D /* Build configuration list for PBXNativeTarget "franChatUITests" */;
+			buildPhases = (
+				DB22C85428A43F240073AC1D /* Sources */,
+				DB22C85528A43F240073AC1D /* Frameworks */,
+				DB22C85628A43F240073AC1D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DB22C85A28A43F240073AC1D /* PBXTargetDependency */,
+			);
+			name = franChatUITests;
+			productName = franChatUITests;
+			productReference = DB22C85828A43F240073AC1D /* franChatUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DB22C83628A43F230073AC1D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1340;
+				LastUpgradeCheck = 1340;
+				TargetAttributes = {
+					DB22C83D28A43F230073AC1D = {
+						CreatedOnToolsVersion = 13.4.1;
+					};
+					DB22C84D28A43F240073AC1D = {
+						CreatedOnToolsVersion = 13.4.1;
+						TestTargetID = DB22C83D28A43F230073AC1D;
+					};
+					DB22C85728A43F240073AC1D = {
+						CreatedOnToolsVersion = 13.4.1;
+						TestTargetID = DB22C83D28A43F230073AC1D;
+					};
+				};
+			};
+			buildConfigurationList = DB22C83928A43F230073AC1D /* Build configuration list for PBXProject "franChat" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = DB22C83528A43F230073AC1D;
+			productRefGroup = DB22C83F28A43F230073AC1D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DB22C83D28A43F230073AC1D /* franChat */,
+				DB22C84D28A43F240073AC1D /* franChatTests */,
+				DB22C85728A43F240073AC1D /* franChatUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DB22C83C28A43F230073AC1D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DB22C84928A43F240073AC1D /* Preview Assets.xcassets in Resources */,
+				DB22C84628A43F240073AC1D /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DB22C84C28A43F240073AC1D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DB22C85628A43F240073AC1D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DB22C83A28A43F230073AC1D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DB22C84428A43F230073AC1D /* ContentView.swift in Sources */,
+				DB22C84228A43F230073AC1D /* franChatApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DB22C84A28A43F240073AC1D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DB22C85328A43F240073AC1D /* franChatTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DB22C85428A43F240073AC1D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DB22C85F28A43F240073AC1D /* franChatUITestsLaunchTests.swift in Sources */,
+				DB22C85D28A43F240073AC1D /* franChatUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		DB22C85028A43F240073AC1D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DB22C83D28A43F230073AC1D /* franChat */;
+			targetProxy = DB22C84F28A43F240073AC1D /* PBXContainerItemProxy */;
+		};
+		DB22C85A28A43F240073AC1D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DB22C83D28A43F230073AC1D /* franChat */;
+			targetProxy = DB22C85928A43F240073AC1D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		DB22C86028A43F240073AC1D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		DB22C86128A43F240073AC1D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		DB22C86328A43F240073AC1D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"franChat/Preview Content\"";
+				DEVELOPMENT_TEAM = AM62XGX95K;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.agustinfranchetti.franChat;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		DB22C86428A43F240073AC1D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"franChat/Preview Content\"";
+				DEVELOPMENT_TEAM = AM62XGX95K;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.agustinfranchetti.franChat;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		DB22C86628A43F240073AC1D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = AM62XGX95K;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.agustinfranchetti.franChatTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/franChat.app/franChat";
+			};
+			name = Debug;
+		};
+		DB22C86728A43F240073AC1D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = AM62XGX95K;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.agustinfranchetti.franChatTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/franChat.app/franChat";
+			};
+			name = Release;
+		};
+		DB22C86928A43F240073AC1D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = AM62XGX95K;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.agustinfranchetti.franChatUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = franChat;
+			};
+			name = Debug;
+		};
+		DB22C86A28A43F240073AC1D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = AM62XGX95K;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.agustinfranchetti.franChatUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = franChat;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DB22C83928A43F230073AC1D /* Build configuration list for PBXProject "franChat" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DB22C86028A43F240073AC1D /* Debug */,
+				DB22C86128A43F240073AC1D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DB22C86228A43F240073AC1D /* Build configuration list for PBXNativeTarget "franChat" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DB22C86328A43F240073AC1D /* Debug */,
+				DB22C86428A43F240073AC1D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DB22C86528A43F240073AC1D /* Build configuration list for PBXNativeTarget "franChatTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DB22C86628A43F240073AC1D /* Debug */,
+				DB22C86728A43F240073AC1D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DB22C86828A43F240073AC1D /* Build configuration list for PBXNativeTarget "franChatUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DB22C86928A43F240073AC1D /* Debug */,
+				DB22C86A28A43F240073AC1D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = DB22C83628A43F230073AC1D /* Project object */;
+}
