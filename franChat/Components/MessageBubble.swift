@@ -19,7 +19,7 @@ struct MessageBubble: View {
                     .background(message.recieved ?
                         Color("Gray"):Color("Peach")
                     )
-                    .cornerRadius(30)
+                    .cornerRadius(30, corners: message.recieved ? [.topLeft, .topRight, .bottomRight] : [.topLeft, .topRight, .bottomLeft])
             }
             .frame(maxWidth:300, alignment: message.recieved ? .leading : .trailing)
             .onTapGesture {

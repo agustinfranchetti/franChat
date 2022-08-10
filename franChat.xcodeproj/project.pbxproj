@@ -17,6 +17,7 @@
 		DB22C87128A443670073AC1D /* TitleRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB22C87028A443670073AC1D /* TitleRow.swift */; };
 		DB22C87428A4492C0073AC1D /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB22C87328A4492C0073AC1D /* Message.swift */; };
 		DB22C87628A449B40073AC1D /* MessageBubble.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB22C87528A449B40073AC1D /* MessageBubble.swift */; };
+		DB22C87828A451240073AC1D /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB22C87728A451240073AC1D /* Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,6 +51,7 @@
 		DB22C87028A443670073AC1D /* TitleRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleRow.swift; sourceTree = "<group>"; };
 		DB22C87328A4492C0073AC1D /* Message.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
 		DB22C87528A449B40073AC1D /* MessageBubble.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageBubble.swift; sourceTree = "<group>"; };
+		DB22C87728A451240073AC1D /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +108,7 @@
 				DB22C86F28A443450073AC1D /* Components */,
 				DB22C84528A43F240073AC1D /* Assets.xcassets */,
 				DB22C84728A43F240073AC1D /* Preview Content */,
+				DB22C87728A451240073AC1D /* Extensions.swift */,
 			);
 			path = franChat;
 			sourceTree = "<group>";
@@ -283,6 +286,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DB22C84428A43F230073AC1D /* ContentView.swift in Sources */,
+				DB22C87828A451240073AC1D /* Extensions.swift in Sources */,
 				DB22C87428A4492C0073AC1D /* Message.swift in Sources */,
 				DB22C87628A449B40073AC1D /* MessageBubble.swift in Sources */,
 				DB22C84228A43F230073AC1D /* franChatApp.swift in Sources */,
