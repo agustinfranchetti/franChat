@@ -9,7 +9,6 @@ import SwiftUI
 
 struct ContentView: View {
     
-    var sampleMessageArray = ["Perri", "como va?", "Hola mano, todo bom. Eu vocem?"]
     var body: some View {
         VStack{
             TitleRow()
