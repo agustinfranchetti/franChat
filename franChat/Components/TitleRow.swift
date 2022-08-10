@@ -27,12 +27,14 @@ struct TitleRow: View {
                 Text("online")
                     .font(.caption)
             }
+            .frame(maxWidth: .infinity,alignment: .leading)
             Image(systemName: "phone.fill")
                 .foregroundColor(.gray)
                 .padding(10)
                 .background(.white)
                 .cornerRadius(50)
         }
+        .padding()
     }
 }
 
