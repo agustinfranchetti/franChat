@@ -10,18 +10,21 @@ import SwiftUI
 struct ContentView: View {
     
     var body: some View {
-        VStack{
-            TitleRow()
-            ScrollView{
-                ForEach(sampleMessageArray.indices) { index in
-                    MessageBubble(message: Message.sampleData[index])
+        VStack {
+            VStack{
+                TitleRow()
+                ScrollView{
+                    ForEach(Message.sampleData.indices) { index in
+                        MessageBubble(message: Message.sampleData[index])
+                    }
                 }
+                .padding(.top, 10)
+                .background(.white)
+                .cornerRadius(30, corners: [.topLeft, .topRight])
             }
-            .padding(.top, 10)
-            .background(.white)
-            .cornerRadius(30, corners: [.topLeft, .topRight])
+            .background(Color("Peach"))
+            MessageInputField()
         }
-        .background(Color("Peach"))
     }
 }
 

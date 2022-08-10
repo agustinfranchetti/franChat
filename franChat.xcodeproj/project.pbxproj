@@ -18,6 +18,10 @@
 		DB22C87428A4492C0073AC1D /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB22C87328A4492C0073AC1D /* Message.swift */; };
 		DB22C87628A449B40073AC1D /* MessageBubble.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB22C87528A449B40073AC1D /* MessageBubble.swift */; };
 		DB22C87828A451240073AC1D /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB22C87728A451240073AC1D /* Extensions.swift */; };
+		DB22C87A28A453780073AC1D /* MessageInputField.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB22C87928A453780073AC1D /* MessageInputField.swift */; };
+		DB22C87C28A456A30073AC1D /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = DB22C87B28A456A30073AC1D /* GoogleService-Info.plist */; };
+		DB22C87F28A45AD70073AC1D /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = DB22C87E28A45AD70073AC1D /* FirebaseFirestore */; };
+		DB22C88128A45AD70073AC1D /* FirebaseFirestoreSwift in Frameworks */ = {isa = PBXBuildFile; productRef = DB22C88028A45AD70073AC1D /* FirebaseFirestoreSwift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,6 +56,8 @@
 		DB22C87328A4492C0073AC1D /* Message.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
 		DB22C87528A449B40073AC1D /* MessageBubble.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageBubble.swift; sourceTree = "<group>"; };
 		DB22C87728A451240073AC1D /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		DB22C87928A453780073AC1D /* MessageInputField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageInputField.swift; sourceTree = "<group>"; };
+		DB22C87B28A456A30073AC1D /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +65,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DB22C87F28A45AD70073AC1D /* FirebaseFirestore in Frameworks */,
+				DB22C88128A45AD70073AC1D /* FirebaseFirestoreSwift in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -104,6 +112,7 @@
 			children = (
 				DB22C84128A43F230073AC1D /* franChatApp.swift */,
 				DB22C84328A43F230073AC1D /* ContentView.swift */,
+				DB22C87B28A456A30073AC1D /* GoogleService-Info.plist */,
 				DB22C87228A449140073AC1D /* Models */,
 				DB22C86F28A443450073AC1D /* Components */,
 				DB22C84528A43F240073AC1D /* Assets.xcassets */,
@@ -143,6 +152,7 @@
 			children = (
 				DB22C87028A443670073AC1D /* TitleRow.swift */,
 				DB22C87528A449B40073AC1D /* MessageBubble.swift */,
+				DB22C87928A453780073AC1D /* MessageInputField.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -171,6 +181,10 @@
 			dependencies = (
 			);
 			name = franChat;
+			packageProductDependencies = (
+				DB22C87E28A45AD70073AC1D /* FirebaseFirestore */,
+				DB22C88028A45AD70073AC1D /* FirebaseFirestoreSwift */,
+			);
 			productName = franChat;
 			productReference = DB22C83E28A43F230073AC1D /* franChat.app */;
 			productType = "com.apple.product-type.application";
@@ -218,6 +232,9 @@
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
+				KnownAssetTags = (
+					Dependecies,
+				);
 				LastSwiftUpdateCheck = 1340;
 				LastUpgradeCheck = 1340;
 				TargetAttributes = {
@@ -243,6 +260,9 @@
 				Base,
 			);
 			mainGroup = DB22C83528A43F230073AC1D;
+			packageReferences = (
+				DB22C87D28A45AD70073AC1D /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
 			productRefGroup = DB22C83F28A43F230073AC1D /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -261,6 +281,7 @@
 			files = (
 				DB22C84928A43F240073AC1D /* Preview Assets.xcassets in Resources */,
 				DB22C84628A43F240073AC1D /* Assets.xcassets in Resources */,
+				DB22C87C28A456A30073AC1D /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -291,6 +312,7 @@
 				DB22C87628A449B40073AC1D /* MessageBubble.swift in Sources */,
 				DB22C84228A43F230073AC1D /* franChatApp.swift in Sources */,
 				DB22C87128A443670073AC1D /* TitleRow.swift in Sources */,
+				DB22C87A28A453780073AC1D /* MessageInputField.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -615,6 +637,30 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		DB22C87D28A45AD70073AC1D /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		DB22C87E28A45AD70073AC1D /* FirebaseFirestore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = DB22C87D28A45AD70073AC1D /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestore;
+		};
+		DB22C88028A45AD70073AC1D /* FirebaseFirestoreSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = DB22C87D28A45AD70073AC1D /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestoreSwift;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = DB22C83628A43F230073AC1D /* Project object */;
 }
