@@ -8,9 +8,20 @@
 import SwiftUI
 
 struct ContentView: View {
+    
+    var sampleMessageArray = ["Perri", "como va?", "Hola mano, todo bom. Eu vocem?"]
     var body: some View {
-        Text("Hello, world!")
-            .padding()
+        VStack{
+            TitleRow()
+            ScrollView{
+                ForEach(sampleMessageArray.indices) { index in
+                    MessageBubble(message: Message.sampleData[index])
+                }
+            }
+            .padding(.top, 10)
+            .background(.white)
+        }
+        .background(Color("Peach"))
     }
 }
 
