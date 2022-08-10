@@ -14,6 +14,7 @@
 		DB22C85328A43F240073AC1D /* franChatTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB22C85228A43F240073AC1D /* franChatTests.swift */; };
 		DB22C85D28A43F240073AC1D /* franChatUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB22C85C28A43F240073AC1D /* franChatUITests.swift */; };
 		DB22C85F28A43F240073AC1D /* franChatUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB22C85E28A43F240073AC1D /* franChatUITestsLaunchTests.swift */; };
+		DB22C87128A443670073AC1D /* TitleRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB22C87028A443670073AC1D /* TitleRow.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +45,7 @@
 		DB22C85828A43F240073AC1D /* franChatUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = franChatUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DB22C85C28A43F240073AC1D /* franChatUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = franChatUITests.swift; sourceTree = "<group>"; };
 		DB22C85E28A43F240073AC1D /* franChatUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = franChatUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		DB22C87028A443670073AC1D /* TitleRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleRow.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +96,7 @@
 		DB22C84028A43F230073AC1D /* franChat */ = {
 			isa = PBXGroup;
 			children = (
+				DB22C86F28A443450073AC1D /* Components */,
 				DB22C84128A43F230073AC1D /* franChatApp.swift */,
 				DB22C84328A43F230073AC1D /* ContentView.swift */,
 				DB22C84528A43F240073AC1D /* Assets.xcassets */,
@@ -125,6 +128,14 @@
 				DB22C85E28A43F240073AC1D /* franChatUITestsLaunchTests.swift */,
 			);
 			path = franChatUITests;
+			sourceTree = "<group>";
+		};
+		DB22C86F28A443450073AC1D /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				DB22C87028A443670073AC1D /* TitleRow.swift */,
+			);
+			path = Components;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -259,6 +270,7 @@
 			files = (
 				DB22C84428A43F230073AC1D /* ContentView.swift in Sources */,
 				DB22C84228A43F230073AC1D /* franChatApp.swift in Sources */,
+				DB22C87128A443670073AC1D /* TitleRow.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
