@@ -8,22 +8,32 @@
 import SwiftUI
 
 struct ContentView: View {
+    @StateObject var messagesManager = MessagesManager()
     
     var body: some View {
         VStack {
             VStack{
                 TitleRow()
-                ScrollView{
-                    ForEach(Message.sampleData.indices) { index in
-                        MessageBubble(message: Message.sampleData[index])
+                ScrollViewReader{ proxy in
+                    //get last id
+                    ScrollView{
+                        ForEach(messagesManager.messages, id: \.id) { message in
+                            MessageBubble(message: message)
+                        }
+                    }
+                    .padding(.top, 10)
+                    .background(.white)
+                    .cornerRadius(30, corners: [.topLeft, .topRight])
+                    .onChange(of: messagesManager.lastMessageId) { lastId in
+                        withAnimation{
+                            proxy.scrollTo(lastId, anchor: .bottom)
+                        }
                     }
                 }
-                .padding(.top, 10)
-                .background(.white)
-                .cornerRadius(30, corners: [.topLeft, .topRight])
             }
             .background(Color("Peach"))
             MessageInputField()
+                .environmentObject(messagesManager)
         }
     }
 }

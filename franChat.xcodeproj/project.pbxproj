@@ -22,6 +22,7 @@
 		DB22C87C28A456A30073AC1D /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = DB22C87B28A456A30073AC1D /* GoogleService-Info.plist */; };
 		DB22C87F28A45AD70073AC1D /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = DB22C87E28A45AD70073AC1D /* FirebaseFirestore */; };
 		DB22C88128A45AD70073AC1D /* FirebaseFirestoreSwift in Frameworks */ = {isa = PBXBuildFile; productRef = DB22C88028A45AD70073AC1D /* FirebaseFirestoreSwift */; };
+		DB22C88328A45F0A0073AC1D /* MessagesManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB22C88228A45F0A0073AC1D /* MessagesManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,6 +59,7 @@
 		DB22C87728A451240073AC1D /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		DB22C87928A453780073AC1D /* MessageInputField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageInputField.swift; sourceTree = "<group>"; };
 		DB22C87B28A456A30073AC1D /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
+		DB22C88228A45F0A0073AC1D /* MessagesManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessagesManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -118,6 +120,7 @@
 				DB22C84528A43F240073AC1D /* Assets.xcassets */,
 				DB22C84728A43F240073AC1D /* Preview Content */,
 				DB22C87728A451240073AC1D /* Extensions.swift */,
+				DB22C88228A45F0A0073AC1D /* MessagesManager.swift */,
 			);
 			path = franChat;
 			sourceTree = "<group>";
@@ -309,6 +312,7 @@
 				DB22C84428A43F230073AC1D /* ContentView.swift in Sources */,
 				DB22C87828A451240073AC1D /* Extensions.swift in Sources */,
 				DB22C87428A4492C0073AC1D /* Message.swift in Sources */,
+				DB22C88328A45F0A0073AC1D /* MessagesManager.swift in Sources */,
 				DB22C87628A449B40073AC1D /* MessageBubble.swift in Sources */,
 				DB22C84228A43F230073AC1D /* franChatApp.swift in Sources */,
 				DB22C87128A443670073AC1D /* TitleRow.swift in Sources */,

@@ -10,16 +10,16 @@ import Foundation
 struct Message: Identifiable, Codable {
     var id: String
     var text: String
-    var recieved: Bool
+    var received: Bool
     var timestamp: Date
 }
 
 extension Message {
     static let sampleData: [Message] =
     [
-        Message(id: "1", text: "Perri", recieved: true, timestamp: Date()),
-        Message(id: "2", text: "Como va?", recieved: true, timestamp: Date()),
-        Message(id: "3", text: "Que onda mano. Bien, y vos?", recieved: false, timestamp: Date()),
+        Message(id: "1", text: "Perri", received: true, timestamp: Date()),
+        Message(id: "2", text: "Como va?", received: true, timestamp: Date()),
+        Message(id: "3", text: "Que onda mano. Bien, y vos?", received: false, timestamp: Date()),
     ]
 }
 

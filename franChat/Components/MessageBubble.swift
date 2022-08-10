@@ -12,16 +12,16 @@ struct MessageBubble: View {
     @State private var showTime = false
     
     var body: some View {
-        VStack(alignment: message.recieved ? .leading : .trailing){
+        VStack(alignment: message.received ? .leading : .trailing){
             HStack{
                 Text(message.text)
                     .padding()
-                    .background(message.recieved ?
+                    .background(message.received ?
                         Color("Gray"):Color("Peach")
                     )
-                    .cornerRadius(30, corners: message.recieved ? [.topLeft, .topRight, .bottomRight] : [.topLeft, .topRight, .bottomLeft])
+                    .cornerRadius(30, corners: message.received ? [.topLeft, .topRight, .bottomRight] : [.topLeft, .topRight, .bottomLeft])
             }
-            .frame(maxWidth:300, alignment: message.recieved ? .leading : .trailing)
+            .frame(maxWidth:300, alignment: message.received ? .leading : .trailing)
             .onTapGesture {
                 showTime.toggle()
             }
@@ -29,11 +29,11 @@ struct MessageBubble: View {
                 Text("\(message.timestamp.formatted(.dateTime.hour().minute()))")
                     .font(.caption2)
                     .foregroundColor(.gray)
-                    .padding(message.recieved ? .leading : .trailing, 25)
+                    .padding(message.received ? .leading : .trailing, 25)
             }
         }
-        .frame(maxWidth: .infinity, alignment: message.recieved ? .leading : .trailing)
-        .padding(message.recieved ? .leading : .trailing)
+        .frame(maxWidth: .infinity, alignment: message.received ? .leading : .trailing)
+        .padding(message.received ? .leading : .trailing)
     }
 }
 
