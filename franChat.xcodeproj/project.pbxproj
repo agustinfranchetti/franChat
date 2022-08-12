@@ -135,7 +135,6 @@
 				DB22C84328A43F230073AC1D /* ContentView.swift */,
 				DBCB6A9728A6E4CC00599948 /* AuthenticationViews */,
 				DBCB6A9228A6E11900599948 /* DismissView.swift */,
-				DBCB6A9E28A6F99A00599948 /* LogoutView.swift */,
 				DB22C87B28A456A30073AC1D /* GoogleService-Info.plist */,
 				DB22C87228A449140073AC1D /* Models */,
 				DB22C86F28A443450073AC1D /* Components */,
@@ -206,6 +205,7 @@
 				DB73587E28A6CE3700B07C54 /* AuthenticationView.swift */,
 				DB73588028A6D41500B07C54 /* LoginEmailView.swift */,
 				DBCB6A9028A6DFF000599948 /* RegisterEmailView.swift */,
+				DBCB6A9E28A6F99A00599948 /* LogoutView.swift */,
 			);
 			path = AuthenticationViews;
 			sourceTree = "<group>";

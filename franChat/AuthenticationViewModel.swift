@@ -32,6 +32,17 @@ final class AuthenticationViewModel: ObservableObject {
         }
     }
     
+    func logInUser(email: String, password: String) {
+        authenticationRepository.logInUser(email: email, password: password){ [weak self] result in
+            switch result {
+            case .success(let user):
+                self?.user = user
+            case .failure(let error):
+                self?.errorMessage = error.localizedDescription
+            }
+        }
+    }
+    
     func logOut() {
         do {
             try authenticationRepository.logOut()

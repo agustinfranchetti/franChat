@@ -33,6 +33,19 @@ final class AuthenticationFirebaseDatasource {
         }
     }
     
+    func logInUser(email: String, password: String, completionBlock: @escaping (Result<User, Error>) -> Void) {
+        Auth.auth().signIn(withEmail: email, password: password) { authDataResult, error in
+            if let error = error {
+                print("Error logging in user \(error.localizedDescription)")
+                completionBlock(.failure(error))
+                return
+            }
+            let email = authDataResult?.user.email ?? "No email"
+            print("Logged in user with email \(email)")
+            completionBlock(.success(.init(email: email)))
+        }
+    }
+    
     func logOut() throws {
         try Auth.auth().signOut()
     }
