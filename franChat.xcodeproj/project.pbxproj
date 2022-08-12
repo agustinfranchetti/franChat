@@ -23,6 +23,9 @@
 		DB22C87F28A45AD70073AC1D /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = DB22C87E28A45AD70073AC1D /* FirebaseFirestore */; };
 		DB22C88128A45AD70073AC1D /* FirebaseFirestoreSwift in Frameworks */ = {isa = PBXBuildFile; productRef = DB22C88028A45AD70073AC1D /* FirebaseFirestoreSwift */; };
 		DB22C88328A45F0A0073AC1D /* MessagesManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB22C88228A45F0A0073AC1D /* MessagesManager.swift */; };
+		DB73587F28A6CE3700B07C54 /* AuthenticationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB73587E28A6CE3700B07C54 /* AuthenticationView.swift */; };
+		DB73588128A6D41500B07C54 /* LoginEmailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB73588028A6D41500B07C54 /* LoginEmailView.swift */; };
+		DBCB6A9128A6DFF000599948 /* RegisterEmailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBCB6A9028A6DFF000599948 /* RegisterEmailView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,6 +63,9 @@
 		DB22C87928A453780073AC1D /* MessageInputField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageInputField.swift; sourceTree = "<group>"; };
 		DB22C87B28A456A30073AC1D /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		DB22C88228A45F0A0073AC1D /* MessagesManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessagesManager.swift; sourceTree = "<group>"; };
+		DB73587E28A6CE3700B07C54 /* AuthenticationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationView.swift; sourceTree = "<group>"; };
+		DB73588028A6D41500B07C54 /* LoginEmailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginEmailView.swift; sourceTree = "<group>"; };
+		DBCB6A9028A6DFF000599948 /* RegisterEmailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterEmailView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -114,6 +120,9 @@
 			children = (
 				DB22C84128A43F230073AC1D /* franChatApp.swift */,
 				DB22C84328A43F230073AC1D /* ContentView.swift */,
+				DB73587E28A6CE3700B07C54 /* AuthenticationView.swift */,
+				DB73588028A6D41500B07C54 /* LoginEmailView.swift */,
+				DBCB6A9028A6DFF000599948 /* RegisterEmailView.swift */,
 				DB22C87B28A456A30073AC1D /* GoogleService-Info.plist */,
 				DB22C87228A449140073AC1D /* Models */,
 				DB22C86F28A443450073AC1D /* Components */,
@@ -309,11 +318,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DBCB6A9128A6DFF000599948 /* RegisterEmailView.swift in Sources */,
 				DB22C84428A43F230073AC1D /* ContentView.swift in Sources */,
+				DB73588128A6D41500B07C54 /* LoginEmailView.swift in Sources */,
 				DB22C87828A451240073AC1D /* Extensions.swift in Sources */,
 				DB22C87428A4492C0073AC1D /* Message.swift in Sources */,
 				DB22C88328A45F0A0073AC1D /* MessagesManager.swift in Sources */,
 				DB22C87628A449B40073AC1D /* MessageBubble.swift in Sources */,
+				DB73587F28A6CE3700B07C54 /* AuthenticationView.swift in Sources */,
 				DB22C84228A43F230073AC1D /* franChatApp.swift in Sources */,
 				DB22C87128A443670073AC1D /* TitleRow.swift in Sources */,
 				DB22C87A28A453780073AC1D /* MessageInputField.swift in Sources */,
