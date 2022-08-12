@@ -28,6 +28,16 @@ final class AuthenticationViewModel: ObservableObject {
                 self?.user = user
             case .failure(let error):
                 self?.errorMessage = error.localizedDescription
+            }
         }
-}    }
+    }
+    
+    func logOut() {
+        do {
+            try authenticationRepository.logOut()
+            self.user = nil
+        } catch {
+           print("Error logging out")
+        }
+    }
 }

@@ -31,6 +31,7 @@
 		DBCB6A9928A6E5EA00599948 /* AuthenticationFirebaseDatasource.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBCB6A9828A6E5EA00599948 /* AuthenticationFirebaseDatasource.swift */; };
 		DBCB6A9B28A6E84A00599948 /* AuthenticationRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBCB6A9A28A6E84A00599948 /* AuthenticationRepository.swift */; };
 		DBCB6A9D28A6E8F100599948 /* AuthenticationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBCB6A9C28A6E8F100599948 /* AuthenticationViewModel.swift */; };
+		DBCB6A9F28A6F99A00599948 /* LogoutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBCB6A9E28A6F99A00599948 /* LogoutView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -75,6 +76,7 @@
 		DBCB6A9828A6E5EA00599948 /* AuthenticationFirebaseDatasource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationFirebaseDatasource.swift; sourceTree = "<group>"; };
 		DBCB6A9A28A6E84A00599948 /* AuthenticationRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationRepository.swift; sourceTree = "<group>"; };
 		DBCB6A9C28A6E8F100599948 /* AuthenticationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationViewModel.swift; sourceTree = "<group>"; };
+		DBCB6A9E28A6F99A00599948 /* LogoutView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogoutView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -133,6 +135,7 @@
 				DB22C84328A43F230073AC1D /* ContentView.swift */,
 				DBCB6A9728A6E4CC00599948 /* AuthenticationViews */,
 				DBCB6A9228A6E11900599948 /* DismissView.swift */,
+				DBCB6A9E28A6F99A00599948 /* LogoutView.swift */,
 				DB22C87B28A456A30073AC1D /* GoogleService-Info.plist */,
 				DB22C87228A449140073AC1D /* Models */,
 				DB22C86F28A443450073AC1D /* Components */,
@@ -349,6 +352,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DBCB6A9F28A6F99A00599948 /* LogoutView.swift in Sources */,
 				DBCB6A9128A6DFF000599948 /* RegisterEmailView.swift in Sources */,
 				DB22C84428A43F230073AC1D /* ContentView.swift in Sources */,
 				DB73588128A6D41500B07C54 /* LoginEmailView.swift in Sources */,

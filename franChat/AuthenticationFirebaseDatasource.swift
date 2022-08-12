@@ -33,5 +33,7 @@ final class AuthenticationFirebaseDatasource {
         }
     }
     
-    
+    func logOut() throws {
+        try Auth.auth().signOut()
+    }
 }
