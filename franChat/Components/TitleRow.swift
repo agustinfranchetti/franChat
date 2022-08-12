@@ -35,8 +35,8 @@ struct TitleRow: View {
                 }
             }
             VStack(alignment: .leading){
-                Text(authenticationViewModel.user?.email ?? "Unknown")
-                    .font(.title).bold()
+                Text(authenticationViewModel.user?.email.components(separatedBy: ("@"))[0] ?? "Unknown")
+                    .font(.title3).bold()
                 Text("online")
                     .font(.caption)
             }
