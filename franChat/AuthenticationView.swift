@@ -50,7 +50,7 @@ struct AuthenticationView: View {
         .sheet(item: $authenticationShiftView) { sheet in
             switch sheet {
             case .register:
-                    Text("Register")
+                    RegisterEmailView()
             case .login :
                     LoginEmailView()
                 
