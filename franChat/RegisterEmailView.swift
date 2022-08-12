@@ -11,42 +11,45 @@ struct RegisterEmailView: View {
     @State var textFieldEmail = ""
     @State var textFieldPassword = ""
     var body: some View {
+        VStack {
+            DismissView()
             VStack {
-                Group {
-                    Text("👋🏻 Welcome to")
-                    Text("franChat")
-                        .bold()
-                }
-                .padding(.horizontal, 10)
-                .multilineTextAlignment(.center)
-                .font(.largeTitle)
-                
-                Text("Create an account to start chatting\nwith your friends!")
-                    .bold()
-                    .padding(.vertical, 10)
+                    Group {
+                        Text("👋🏻 Welcome to")
+                        Text("franChat")
+                            .bold()
+                    }
+                    .padding(.horizontal, 10)
                     .multilineTextAlignment(.center)
-                
-                Group {
-                    VStack {
-                    TextField("e-mail address", text: $textFieldEmail)
-                    TextField("password", text: $textFieldPassword)
-                    }
-                    .padding(.top, 30)
+                    .font(.largeTitle)
                     
-                    Button {
-                        print("register")
-                    } label: {
-                        Label("Register", systemImage: "person.fill")
+                    Text("Create an account to start chatting\nwith your friends!")
+                        .bold()
+                        .padding(.vertical, 10)
+                        .multilineTextAlignment(.center)
+                    
+                    Group {
+                        VStack {
+                        TextField("e-mail address", text: $textFieldEmail)
+                        TextField("password", text: $textFieldPassword)
+                        }
+                        .padding(.top, 30)
+                        
+                        Button {
+                            print("register")
+                        } label: {
+                            Label("Register", systemImage: "person.fill")
+                        }
+                        .controlSize(.large)
+                        .buttonStyle(.borderedProminent)
+                        .padding(.top, 30)
                     }
-                    .controlSize(.large)
-                    .buttonStyle(.borderedProminent)
-                    .padding(.top, 30)
+                    .textFieldStyle(.roundedBorder)
+                    .padding(.horizontal,50)
+                    Spacer()
                 }
-                .textFieldStyle(.roundedBorder)
-                .padding(.horizontal,50)
-                Spacer()
-            }
             .padding(.top, 80)
+        }
         }
     }
 

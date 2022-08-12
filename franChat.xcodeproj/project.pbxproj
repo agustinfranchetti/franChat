@@ -26,6 +26,7 @@
 		DB73587F28A6CE3700B07C54 /* AuthenticationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB73587E28A6CE3700B07C54 /* AuthenticationView.swift */; };
 		DB73588128A6D41500B07C54 /* LoginEmailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB73588028A6D41500B07C54 /* LoginEmailView.swift */; };
 		DBCB6A9128A6DFF000599948 /* RegisterEmailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBCB6A9028A6DFF000599948 /* RegisterEmailView.swift */; };
+		DBCB6A9328A6E11900599948 /* DismissView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBCB6A9228A6E11900599948 /* DismissView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -66,6 +67,7 @@
 		DB73587E28A6CE3700B07C54 /* AuthenticationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationView.swift; sourceTree = "<group>"; };
 		DB73588028A6D41500B07C54 /* LoginEmailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginEmailView.swift; sourceTree = "<group>"; };
 		DBCB6A9028A6DFF000599948 /* RegisterEmailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterEmailView.swift; sourceTree = "<group>"; };
+		DBCB6A9228A6E11900599948 /* DismissView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DismissView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -121,6 +123,7 @@
 				DB22C84128A43F230073AC1D /* franChatApp.swift */,
 				DB22C84328A43F230073AC1D /* ContentView.swift */,
 				DB73587E28A6CE3700B07C54 /* AuthenticationView.swift */,
+				DBCB6A9228A6E11900599948 /* DismissView.swift */,
 				DB73588028A6D41500B07C54 /* LoginEmailView.swift */,
 				DBCB6A9028A6DFF000599948 /* RegisterEmailView.swift */,
 				DB22C87B28A456A30073AC1D /* GoogleService-Info.plist */,
@@ -329,6 +332,7 @@
 				DB22C84228A43F230073AC1D /* franChatApp.swift in Sources */,
 				DB22C87128A443670073AC1D /* TitleRow.swift in Sources */,
 				DB22C87A28A453780073AC1D /* MessageInputField.swift in Sources */,
+				DBCB6A9328A6E11900599948 /* DismissView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
