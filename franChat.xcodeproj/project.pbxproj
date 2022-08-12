@@ -29,6 +29,8 @@
 		DBCB6A9328A6E11900599948 /* DismissView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBCB6A9228A6E11900599948 /* DismissView.swift */; };
 		DBCB6A9628A6E48100599948 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = DBCB6A9528A6E48100599948 /* FirebaseAuth */; };
 		DBCB6A9928A6E5EA00599948 /* AuthenticationFirebaseDatasource.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBCB6A9828A6E5EA00599948 /* AuthenticationFirebaseDatasource.swift */; };
+		DBCB6A9B28A6E84A00599948 /* AuthenticationRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBCB6A9A28A6E84A00599948 /* AuthenticationRepository.swift */; };
+		DBCB6A9D28A6E8F100599948 /* AuthenticationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBCB6A9C28A6E8F100599948 /* AuthenticationViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -71,6 +73,8 @@
 		DBCB6A9028A6DFF000599948 /* RegisterEmailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterEmailView.swift; sourceTree = "<group>"; };
 		DBCB6A9228A6E11900599948 /* DismissView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DismissView.swift; sourceTree = "<group>"; };
 		DBCB6A9828A6E5EA00599948 /* AuthenticationFirebaseDatasource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationFirebaseDatasource.swift; sourceTree = "<group>"; };
+		DBCB6A9A28A6E84A00599948 /* AuthenticationRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationRepository.swift; sourceTree = "<group>"; };
+		DBCB6A9C28A6E8F100599948 /* AuthenticationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -137,6 +141,8 @@
 				DB22C87728A451240073AC1D /* Extensions.swift */,
 				DB22C88228A45F0A0073AC1D /* MessagesManager.swift */,
 				DBCB6A9828A6E5EA00599948 /* AuthenticationFirebaseDatasource.swift */,
+				DBCB6A9A28A6E84A00599948 /* AuthenticationRepository.swift */,
+				DBCB6A9C28A6E8F100599948 /* AuthenticationViewModel.swift */,
 			);
 			path = franChat;
 			sourceTree = "<group>";
@@ -349,6 +355,7 @@
 				DB22C87828A451240073AC1D /* Extensions.swift in Sources */,
 				DB22C87428A4492C0073AC1D /* Message.swift in Sources */,
 				DB22C88328A45F0A0073AC1D /* MessagesManager.swift in Sources */,
+				DBCB6A9D28A6E8F100599948 /* AuthenticationViewModel.swift in Sources */,
 				DB22C87628A449B40073AC1D /* MessageBubble.swift in Sources */,
 				DB73587F28A6CE3700B07C54 /* AuthenticationView.swift in Sources */,
 				DB22C84228A43F230073AC1D /* franChatApp.swift in Sources */,
@@ -356,6 +363,7 @@
 				DB22C87128A443670073AC1D /* TitleRow.swift in Sources */,
 				DB22C87A28A453780073AC1D /* MessageInputField.swift in Sources */,
 				DBCB6A9328A6E11900599948 /* DismissView.swift in Sources */,
+				DBCB6A9B28A6E84A00599948 /* AuthenticationRepository.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
