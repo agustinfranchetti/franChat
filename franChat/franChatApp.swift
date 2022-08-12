@@ -13,9 +13,15 @@ struct franChatApp: App {
     init() {
         FirebaseApp.configure()
     }
+    @StateObject var authenticationViewModel = AuthenticationViewModel()
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            if let _ = authenticationViewModel.user {
+                ContentView(authenticationViewModel: AuthenticationViewModel())
+            } else {
+                AuthenticationView(authenticationViewModel: authenticationViewModel)
+            }
+            
         }
     }
 }

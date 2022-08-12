@@ -7,23 +7,36 @@
 
 import SwiftUI
 
+enum MainScreenShiftView: String, Identifiable {
+    case logout
+    
+    var id: String{
+        return rawValue
+    }
+}
+
 struct TitleRow: View {
+    @ObservedObject var authenticationViewModel: AuthenticationViewModel
+    @State private var mainScreenShiftView : MainScreenShiftView?
     //profile picture
     var imageUrl = URL(string: "https://pbs.twimg.com/profile_images/1378419539344494593/1Yj6FrAr_400x400.jpg")
-    var name = "Francho"
     var body: some View {
         HStack(spacing:20) {
-            AsyncImage(url: imageUrl){image in
-                image.resizable()
-                    .aspectRatio(contentMode: .fill)
-                    .frame(width:50, height:50)
-                    .cornerRadius(50)
-            } placeholder: {
-                ProgressView()
+            Button{
+                mainScreenShiftView = .logout
+            } label: {
+                AsyncImage(url: imageUrl){image in
+                    image.resizable()
+                        .aspectRatio(contentMode: .fill)
+                        .frame(width:50, height:50)
+                        .cornerRadius(50)
+                } placeholder: {
+                    ProgressView()
+                }
             }
             VStack(alignment: .leading){
-                Text(name)
-                    .font(.title).bold()
+                Text(authenticationViewModel.user?.email.components(separatedBy: ("@"))[0] ?? "Unknown")
+                    .font(.title3).bold()
                 Text("online")
                     .font(.caption)
             }
@@ -35,12 +48,18 @@ struct TitleRow: View {
                 .cornerRadius(50)
         }
         .padding()
+        .sheet(item: $mainScreenShiftView) { sheet in
+            switch sheet {
+            case .logout:
+                LogoutView(authenticationViewModel: AuthenticationViewModel())
+            }
+        }
     }
 }
 
 struct TitleRow_Previews: PreviewProvider {
     static var previews: some View {
-        TitleRow()
+        TitleRow(authenticationViewModel: AuthenticationViewModel())
             .background(Color("Peach"))
     }
 }

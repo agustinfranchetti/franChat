@@ -7,39 +7,43 @@
 
 import SwiftUI
 
+
+
 struct ContentView: View {
+    @ObservedObject var authenticationViewModel: AuthenticationViewModel
     @StateObject var messagesManager = MessagesManager()
-    
     var body: some View {
-        VStack {
-            VStack{
-                TitleRow()
-                ScrollViewReader{ proxy in
-                    //get last id
-                    ScrollView{
-                        ForEach(messagesManager.messages, id: \.id) { message in
-                            MessageBubble(message: message)
+            VStack {
+                VStack{
+                    TitleRow(authenticationViewModel: authenticationViewModel)
+                    ScrollViewReader{ proxy in
+                        //get last id
+                        ScrollView{
+                            ForEach(messagesManager.messages, id: \.id) { message in
+                                MessageBubble(message: message)
+                            }
                         }
-                    }
-                    .padding(.top, 10)
-                    .background(.white)
-                    .cornerRadius(30, corners: [.topLeft, .topRight])
-                    .onChange(of: messagesManager.lastMessageId) { lastId in
-                        withAnimation{
-                            proxy.scrollTo(lastId, anchor: .bottom)
+                        .padding(.top, 10)
+                        .background(.white)
+                        .cornerRadius(30, corners: [.topLeft, .topRight])
+                        .onChange(of: messagesManager.lastMessageId) { lastId in
+                            withAnimation{
+                                proxy.scrollTo(lastId, anchor: .bottom)
+                            }
                         }
                     }
                 }
+                .background(Color("Peach"))
+                MessageInputField()
+                    .environmentObject(messagesManager)
             }
-            .background(Color("Peach"))
-            MessageInputField()
-                .environmentObject(messagesManager)
+            
         }
     }
-}
+
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        ContentView(authenticationViewModel: AuthenticationViewModel())
     }
 }
