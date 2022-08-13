@@ -51,7 +51,7 @@ struct TitleRow: View {
         .sheet(item: $mainScreenShiftView) { sheet in
             switch sheet {
             case .logout:
-                LogoutView(authenticationViewModel: AuthenticationViewModel())
+                LogoutView(authenticationViewModel: authenticationViewModel)
             }
         }
     }
