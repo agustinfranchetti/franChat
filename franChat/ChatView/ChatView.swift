@@ -26,8 +26,6 @@ struct ChatView: View {
                     }
                 }
                 .background(Color("Peach"))
-                MessageInputField(authenticationViewModel: authenticationViewModel)
-                    .environmentObject(chatsManager)
             }
             
         }
