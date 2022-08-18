@@ -11,6 +11,5 @@ struct Chat: Identifiable, Codable {
     var id: String
     var user1: String
     var user2: String
-    var messages: Message
 }
 

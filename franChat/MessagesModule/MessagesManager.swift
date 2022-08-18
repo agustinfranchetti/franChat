@@ -19,7 +19,7 @@ class MessagesManager: ObservableObject {
     }
     
     func getMessages(){
-        db.collection("messages").addSnapshotListener { querySnapshot, error in
+        db.collection("chats").document("HGn1kvMZI5rDnbemahTz").collection("messages").addSnapshotListener { querySnapshot, error in
             guard let documents = querySnapshot?.documents else {
                 print("ERROR FETCHING DOCUMENTS: \(String(describing: error))")
                 return
@@ -41,10 +41,10 @@ class MessagesManager: ObservableObject {
         }
     }
     
-    func sendMessage(text: String, sender: String, receiver: String){
+    func sendMessage(chatID: String, text: String, sender: String, receiver: String){
         do{
             let newMessage = Message(id:"\(UUID())", text: text, sender: sender, receiver: receiver, timestamp: Date())
-            try db.collection("messages").document().setData(from: newMessage)
+            try db.collection("chats").document(chatID).collection("messages").document().setData(from: newMessage)
         } catch {
             print("ERROR ADDING MESSAGE TO FIRESTORE: \(error)")
         }

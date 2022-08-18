@@ -17,7 +17,7 @@ struct MessageInputField: View {
         HStack{
             CustomTextField(placeholder: Text("Type a message..."), text: $message)
             Button{
-                messagesManager.sendMessage(text: message, sender: currentUser!, receiver: "marianochavez@gmail.com")
+                messagesManager.sendMessage(chatID: "HGn1kvMZI5rDnbemahTz", text: message, sender: currentUser!, receiver: "marianochavez@gmail.com")
                 message = ""
             } label: {
                 Image(systemName: "paperplane.fill")

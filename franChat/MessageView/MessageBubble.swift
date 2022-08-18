@@ -21,7 +21,7 @@ struct MessageBubble: View {
                     .background(message.sender == currentUser ?
                         Color("Gray"):Color("Peach")
                     )
-                    .cornerRadius(30, corners: message.sender == currentUser ? [.topLeft, .topRight, .bottomLeft] : [.topLeft, .topRight, .bottomRight])
+                    .cornerRadius(25, corners: message.sender == currentUser ? [.topLeft, .topRight, .bottomLeft] : [.topLeft, .topRight, .bottomRight])
             }
             .frame(maxWidth:300, alignment: message.sender == currentUser ? .trailing : .leading)
             .onTapGesture {
