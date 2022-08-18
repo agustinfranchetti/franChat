@@ -17,7 +17,7 @@ struct franChatApp: App {
     var body: some Scene {
         WindowGroup {
             if let _ = authenticationViewModel.user {
-                ContentView(authenticationViewModel: authenticationViewModel)
+                MessageView(authenticationViewModel: authenticationViewModel)
             } else {
                 AuthenticationView(authenticationViewModel: authenticationViewModel)
             }

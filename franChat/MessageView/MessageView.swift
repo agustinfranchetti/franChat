@@ -9,7 +9,7 @@ import SwiftUI
 
 
 
-struct ContentView: View {
+struct MessageView: View {
     @ObservedObject var authenticationViewModel: AuthenticationViewModel
     @StateObject var messagesManager = MessagesManager()
     var body: some View {
@@ -20,7 +20,7 @@ struct ContentView: View {
                         //get last id
                         ScrollView{
                             ForEach(messagesManager.messages, id: \.id) { message in
-                                MessageBubble(message: message)
+                                MessageBubble(authenticationViewModel: authenticationViewModel, message: message)
                             }
                         }
                         .padding(.top, 10)
@@ -34,7 +34,7 @@ struct ContentView: View {
                     }
                 }
                 .background(Color("Peach"))
-                MessageInputField()
+                MessageInputField(authenticationViewModel: authenticationViewModel)
                     .environmentObject(messagesManager)
             }
             
@@ -44,6 +44,6 @@ struct ContentView: View {
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView(authenticationViewModel: AuthenticationViewModel())
+        MessageView(authenticationViewModel: AuthenticationViewModel())
     }
 }

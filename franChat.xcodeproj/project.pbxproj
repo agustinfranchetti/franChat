@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		DB22C84228A43F230073AC1D /* franChatApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB22C84128A43F230073AC1D /* franChatApp.swift */; };
-		DB22C84428A43F230073AC1D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB22C84328A43F230073AC1D /* ContentView.swift */; };
+		DB22C84428A43F230073AC1D /* MessageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB22C84328A43F230073AC1D /* MessageView.swift */; };
 		DB22C84628A43F240073AC1D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DB22C84528A43F240073AC1D /* Assets.xcassets */; };
 		DB22C84928A43F240073AC1D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DB22C84828A43F240073AC1D /* Preview Assets.xcassets */; };
 		DB22C85328A43F240073AC1D /* franChatTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB22C85228A43F240073AC1D /* franChatTests.swift */; };
@@ -23,6 +23,7 @@
 		DB22C87F28A45AD70073AC1D /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = DB22C87E28A45AD70073AC1D /* FirebaseFirestore */; };
 		DB22C88128A45AD70073AC1D /* FirebaseFirestoreSwift in Frameworks */ = {isa = PBXBuildFile; productRef = DB22C88028A45AD70073AC1D /* FirebaseFirestoreSwift */; };
 		DB22C88328A45F0A0073AC1D /* MessagesManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB22C88228A45F0A0073AC1D /* MessagesManager.swift */; };
+		DB48A51828AED4F500B47AAA /* Chat.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB48A51728AED4F500B47AAA /* Chat.swift */; };
 		DB73587F28A6CE3700B07C54 /* AuthenticationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB73587E28A6CE3700B07C54 /* AuthenticationView.swift */; };
 		DB73588128A6D41500B07C54 /* LoginEmailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB73588028A6D41500B07C54 /* LoginEmailView.swift */; };
 		DBCB6A9128A6DFF000599948 /* RegisterEmailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBCB6A9028A6DFF000599948 /* RegisterEmailView.swift */; };
@@ -54,7 +55,7 @@
 /* Begin PBXFileReference section */
 		DB22C83E28A43F230073AC1D /* franChat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = franChat.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DB22C84128A43F230073AC1D /* franChatApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = franChatApp.swift; sourceTree = "<group>"; };
-		DB22C84328A43F230073AC1D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		DB22C84328A43F230073AC1D /* MessageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageView.swift; sourceTree = "<group>"; };
 		DB22C84528A43F240073AC1D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DB22C84828A43F240073AC1D /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		DB22C84E28A43F240073AC1D /* franChatTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = franChatTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -69,6 +70,7 @@
 		DB22C87928A453780073AC1D /* MessageInputField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageInputField.swift; sourceTree = "<group>"; };
 		DB22C87B28A456A30073AC1D /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		DB22C88228A45F0A0073AC1D /* MessagesManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessagesManager.swift; sourceTree = "<group>"; };
+		DB48A51728AED4F500B47AAA /* Chat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Chat.swift; sourceTree = "<group>"; };
 		DB73587E28A6CE3700B07C54 /* AuthenticationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationView.swift; sourceTree = "<group>"; };
 		DB73588028A6D41500B07C54 /* LoginEmailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginEmailView.swift; sourceTree = "<group>"; };
 		DBCB6A9028A6DFF000599948 /* RegisterEmailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterEmailView.swift; sourceTree = "<group>"; };
@@ -132,12 +134,9 @@
 			isa = PBXGroup;
 			children = (
 				DB22C84128A43F230073AC1D /* franChatApp.swift */,
-				DB22C84328A43F230073AC1D /* ContentView.swift */,
 				DBCB6A9728A6E4CC00599948 /* AuthenticationViews */,
-				DBCB6A9228A6E11900599948 /* DismissView.swift */,
-				DB22C87B28A456A30073AC1D /* GoogleService-Info.plist */,
+				DB22C86F28A443450073AC1D /* MessageView */,
 				DB22C87228A449140073AC1D /* Models */,
-				DB22C86F28A443450073AC1D /* Components */,
 				DB22C84528A43F240073AC1D /* Assets.xcassets */,
 				DB22C84728A43F240073AC1D /* Preview Content */,
 				DB22C87728A451240073AC1D /* Extensions.swift */,
@@ -145,6 +144,7 @@
 				DBCB6A9828A6E5EA00599948 /* AuthenticationFirebaseDatasource.swift */,
 				DBCB6A9A28A6E84A00599948 /* AuthenticationRepository.swift */,
 				DBCB6A9C28A6E8F100599948 /* AuthenticationViewModel.swift */,
+				DB22C87B28A456A30073AC1D /* GoogleService-Info.plist */,
 			);
 			path = franChat;
 			sourceTree = "<group>";
@@ -174,20 +174,23 @@
 			path = franChatUITests;
 			sourceTree = "<group>";
 		};
-		DB22C86F28A443450073AC1D /* Components */ = {
+		DB22C86F28A443450073AC1D /* MessageView */ = {
 			isa = PBXGroup;
 			children = (
+				DB22C84328A43F230073AC1D /* MessageView.swift */,
 				DB22C87028A443670073AC1D /* TitleRow.swift */,
 				DB22C87528A449B40073AC1D /* MessageBubble.swift */,
 				DB22C87928A453780073AC1D /* MessageInputField.swift */,
+				DBCB6A9228A6E11900599948 /* DismissView.swift */,
 			);
-			path = Components;
+			path = MessageView;
 			sourceTree = "<group>";
 		};
 		DB22C87228A449140073AC1D /* Models */ = {
 			isa = PBXGroup;
 			children = (
 				DB22C87328A4492C0073AC1D /* Message.swift */,
+				DB48A51728AED4F500B47AAA /* Chat.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -354,7 +357,8 @@
 			files = (
 				DBCB6A9F28A6F99A00599948 /* LogoutView.swift in Sources */,
 				DBCB6A9128A6DFF000599948 /* RegisterEmailView.swift in Sources */,
-				DB22C84428A43F230073AC1D /* ContentView.swift in Sources */,
+				DB48A51828AED4F500B47AAA /* Chat.swift in Sources */,
+				DB22C84428A43F230073AC1D /* MessageView.swift in Sources */,
 				DB73588128A6D41500B07C54 /* LoginEmailView.swift in Sources */,
 				DB22C87828A451240073AC1D /* Extensions.swift in Sources */,
 				DB22C87428A4492C0073AC1D /* Message.swift in Sources */,

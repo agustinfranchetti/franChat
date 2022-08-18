@@ -9,13 +9,15 @@ import SwiftUI
 
 struct MessageInputField: View {
     @EnvironmentObject var messagesManager: MessagesManager
+    @ObservedObject var authenticationViewModel: AuthenticationViewModel
     
     @State private var message = ""
     var body: some View {
+        let currentUser = authenticationViewModel.user?.email
         HStack{
             CustomTextField(placeholder: Text("Type a message..."), text: $message)
             Button{
-                messagesManager.sendMessage(text: message)
+                messagesManager.sendMessage(text: message, sender: currentUser!, receiver: "marianochavez@gmail.com")
                 message = ""
             } label: {
                 Image(systemName: "paperplane.fill")
@@ -35,7 +37,7 @@ struct MessageInputField: View {
 
 struct MessageInputField_Previews: PreviewProvider {
     static var previews: some View {
-        MessageInputField()
+        MessageInputField(authenticationViewModel: AuthenticationViewModel())
             .environmentObject(MessagesManager())
     }
 }

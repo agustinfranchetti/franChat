@@ -41,9 +41,9 @@ class MessagesManager: ObservableObject {
         }
     }
     
-    func sendMessage(text: String){
+    func sendMessage(text: String, sender: String, receiver: String){
         do{
-            let newMessage = Message(id:"\(UUID())", text: text, received: false, timestamp: Date())
+            let newMessage = Message(id:"\(UUID())", text: text, sender: sender, receiver: receiver, timestamp: Date())
             try db.collection("messages").document().setData(from: newMessage)
         } catch {
             print("ERROR ADDING MESSAGE TO FIRESTORE: \(error)")
