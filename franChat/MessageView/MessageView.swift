@@ -12,6 +12,8 @@ import SwiftUI
 struct MessageView: View {
     @ObservedObject var authenticationViewModel: AuthenticationViewModel
     @StateObject var messagesManager = MessagesManager()
+    var chatId: String = ""
+    var chatContact: String = ""
     var body: some View {
         VStack {
             VStack{
@@ -33,7 +35,7 @@ struct MessageView: View {
                 }
             }
             .background(Color("Peach"))
-            MessageInputField(authenticationViewModel: authenticationViewModel)
+            MessageInputField(authenticationViewModel: authenticationViewModel, chatId: chatId, chatContact: chatContact)
                 .environmentObject(messagesManager)
         }
         .navigationBarTitleDisplayMode(.inline)

@@ -20,7 +20,7 @@ class ChatsManager: ObservableObject {
     
     func getChats(){
         db.collection("chats").addSnapshotListener { querySnapshot, error in
-            guard let documents = querySnapshot?.documents else {
+            guard let documents = querySnapshot?.documents  else {
                 print("ERROR FETCHING CHATS: \(String(describing: error))")
                 return
             }

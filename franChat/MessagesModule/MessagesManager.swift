@@ -14,12 +14,9 @@ class MessagesManager: ObservableObject {
     @Published private(set) var lastMessageId = ""
     let db = Firestore.firestore()
     
-    init(){
-        getMessages()
-    }
     
-    func getMessages(){
-        db.collection("chats").document("HGn1kvMZI5rDnbemahTz").collection("messages").addSnapshotListener { querySnapshot, error in
+    func getMessages(chatID: String) {
+        db.collection("chats").document(chatID).collection("messages").addSnapshotListener { querySnapshot, error in
             guard let documents = querySnapshot?.documents else {
                 print("ERROR FETCHING DOCUMENTS: \(String(describing: error))")
                 return

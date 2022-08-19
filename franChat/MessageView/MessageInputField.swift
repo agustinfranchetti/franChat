@@ -12,12 +12,15 @@ struct MessageInputField: View {
     @ObservedObject var authenticationViewModel: AuthenticationViewModel
     
     @State private var message = ""
+    var chatId: String = ""
+    var chatContact: String = ""
+    
     var body: some View {
         let currentUser = authenticationViewModel.user?.email
         HStack{
             CustomTextField(placeholder: Text("Type a message..."), text: $message)
             Button{
-                messagesManager.sendMessage(chatID: "HGn1kvMZI5rDnbemahTz", text: message, sender: currentUser!, receiver: "marianochavez@gmail.com")
+                messagesManager.sendMessage(chatID: chatId, text: message, sender: currentUser!, receiver: chatContact)
                 message = ""
             } label: {
                 Image(systemName: "paperplane.fill")
