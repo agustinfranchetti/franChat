@@ -24,6 +24,8 @@
 		DB48A52528AEE21A00B47AAA /* ChatView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB48A52428AEE21A00B47AAA /* ChatView.swift */; };
 		DB48A52828AEE2BF00B47AAA /* ChatsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB48A52728AEE2BF00B47AAA /* ChatsManager.swift */; };
 		DB48A52A28AEE46600B47AAA /* ChatPreview.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB48A52928AEE46600B47AAA /* ChatPreview.swift */; };
+		DB7253D828B033EA000ED15A /* NewChatButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB7253D728B033EA000ED15A /* NewChatButtonView.swift */; };
+		DB7253DA28B037A3000ED15A /* SearchContactForNewChatView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB7253D928B037A3000ED15A /* SearchContactForNewChatView.swift */; };
 		DB73587F28A6CE3700B07C54 /* AuthenticationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB73587E28A6CE3700B07C54 /* AuthenticationView.swift */; };
 		DB73588128A6D41500B07C54 /* LoginEmailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB73588028A6D41500B07C54 /* LoginEmailView.swift */; };
 		DBCB6A9128A6DFF000599948 /* RegisterEmailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBCB6A9028A6DFF000599948 /* RegisterEmailView.swift */; };
@@ -71,6 +73,8 @@
 		DB48A52428AEE21A00B47AAA /* ChatView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatView.swift; sourceTree = "<group>"; };
 		DB48A52728AEE2BF00B47AAA /* ChatsManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatsManager.swift; sourceTree = "<group>"; };
 		DB48A52928AEE46600B47AAA /* ChatPreview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatPreview.swift; sourceTree = "<group>"; };
+		DB7253D728B033EA000ED15A /* NewChatButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewChatButtonView.swift; sourceTree = "<group>"; };
+		DB7253D928B037A3000ED15A /* SearchContactForNewChatView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchContactForNewChatView.swift; sourceTree = "<group>"; };
 		DB73587E28A6CE3700B07C54 /* AuthenticationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationView.swift; sourceTree = "<group>"; };
 		DB73588028A6D41500B07C54 /* LoginEmailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginEmailView.swift; sourceTree = "<group>"; };
 		DBCB6A9028A6DFF000599948 /* RegisterEmailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterEmailView.swift; sourceTree = "<group>"; };
@@ -207,6 +211,8 @@
 			children = (
 				DB48A52428AEE21A00B47AAA /* ChatView.swift */,
 				DB48A52928AEE46600B47AAA /* ChatPreview.swift */,
+				DB7253D728B033EA000ED15A /* NewChatButtonView.swift */,
+				DB7253D928B037A3000ED15A /* SearchContactForNewChatView.swift */,
 			);
 			path = ChatView;
 			sourceTree = "<group>";
@@ -381,6 +387,7 @@
 			files = (
 				DBCB6A9F28A6F99A00599948 /* LogoutView.swift in Sources */,
 				DBCB6A9128A6DFF000599948 /* RegisterEmailView.swift in Sources */,
+				DB7253DA28B037A3000ED15A /* SearchContactForNewChatView.swift in Sources */,
 				DB48A52A28AEE46600B47AAA /* ChatPreview.swift in Sources */,
 				DB48A51828AED4F500B47AAA /* Chat.swift in Sources */,
 				DB22C84428A43F230073AC1D /* MessageView.swift in Sources */,
@@ -397,6 +404,7 @@
 				DB22C87128A443670073AC1D /* TitleRow.swift in Sources */,
 				DB22C87A28A453780073AC1D /* MessageInputField.swift in Sources */,
 				DBCB6A9328A6E11900599948 /* DismissView.swift in Sources */,
+				DB7253D828B033EA000ED15A /* NewChatButtonView.swift in Sources */,
 				DB48A52828AEE2BF00B47AAA /* ChatsManager.swift in Sources */,
 				DBCB6A9B28A6E84A00599948 /* AuthenticationRepository.swift in Sources */,
 			);

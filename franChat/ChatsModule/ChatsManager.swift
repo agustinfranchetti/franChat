@@ -39,8 +39,11 @@ class ChatsManager: ObservableObject {
     
     func startChat(user1: String, user2: String){
         do{
-            let newChat = Chat(id:"\(UUID())", user1: user1, user2: user2)
-            try db.collection("chats").document().setData(from: newChat)
+            let chatId = "\(UUID())"
+            let newChat = Chat(id:chatId, user1: user1, user2: user2)
+            try db.collection("chats").document(chatId).setData(from: newChat)
+            let newMessage = Message(id:"\(UUID())", text: "Hi!", sender: user1, receiver: user2, timestamp: Date())
+            try db.collection("chats").document(chatId).collection("messages").addDocument(from: newMessage)
         } catch {
             print("ERROR STARTING NEW CHAT TO FIRESTORE: \(error)")
         }

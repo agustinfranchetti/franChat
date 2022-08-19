@@ -13,14 +13,15 @@ struct ChatPreview: View {
     var body: some View {
         let currentUser = authenticationViewModel.user?.email
         let chatContact = currentUser == chat.user1 ? chat.user2 : chat.user1
-        let atIndex = chatContact.firstIndex(of: "@")!
+        //let atIndex = chatContact.firstIndex(of: "@")
         let chatId = chat.id
         let messagesManager = MessagesManager()
         let messages = messagesManager.getMessages(chatID: chatId)
         NavigationLink(destination : MessageView(authenticationViewModel: authenticationViewModel, messagesManager: messagesManager, chatId: chatId, chatContact: chatContact)) {
             HStack{
                 VStack(alignment: .leading){
-                    Text(chatContact.prefix(upTo: atIndex))
+                    //Text(chatContact.prefix(upTo: atIndex!))
+                    Text(chatContact)
                         .font(.title3).bold()
                     Text(chatContact)
                         .font(.caption)

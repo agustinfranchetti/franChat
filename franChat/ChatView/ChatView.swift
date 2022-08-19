@@ -27,7 +27,10 @@ struct ChatView: View {
                     }
                 }
                 .background(Color("Peach"))
+                Spacer()
+                NewChatButtonView(authenticationViewModel: authenticationViewModel, chatsManager: chatsManager, chat: Chat(id: "", user1: "", user2: ""))
             }
+            
         }
         .navigationBarTitleDisplayMode(.inline)
         .navigationBarBackButtonHidden(true)
