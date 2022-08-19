@@ -13,33 +13,33 @@ struct MessageView: View {
     @ObservedObject var authenticationViewModel: AuthenticationViewModel
     @StateObject var messagesManager = MessagesManager()
     var body: some View {
-            VStack {
-                VStack{
-                    TitleRow(authenticationViewModel: authenticationViewModel)
-                    ScrollViewReader{ proxy in
-                        //get last id
-                        ScrollView{
-                            ForEach(messagesManager.messages, id: \.id) { message in
-                                MessageBubble(authenticationViewModel: authenticationViewModel, message: message)
-                            }
+        VStack {
+            VStack{
+                ScrollViewReader{ proxy in
+                    //get last id
+                    ScrollView{
+                      ForEach(messagesManager.messages, id: \.id) { message in
+                            MessageBubble(authenticationViewModel: authenticationViewModel, message: message)
                         }
-                        .padding(.top, 10)
-                        .background(.white)
-                        .cornerRadius(30, corners: [.topLeft, .topRight])
-                        .onChange(of: messagesManager.lastMessageId) { lastId in
-                            withAnimation{
-                                proxy.scrollTo(lastId, anchor: .bottom)
-                            }
+                    }
+                    .padding(.top, 10)
+                    .background(.white)
+                    .cornerRadius(30, corners: [.topLeft, .topRight])
+                    .onChange(of: messagesManager.lastMessageId) { lastId in
+                        withAnimation{
+                            proxy.scrollTo(lastId, anchor: .bottom)
                         }
                     }
                 }
-                .background(Color("Peach"))
-                MessageInputField(authenticationViewModel: authenticationViewModel)
-                    .environmentObject(messagesManager)
             }
-            
+            .background(Color("Peach"))
+            MessageInputField(authenticationViewModel: authenticationViewModel)
+                .environmentObject(messagesManager)
         }
+        .navigationBarTitleDisplayMode(.inline)
     }
+}
+
 
 
 struct ContentView_Previews: PreviewProvider {

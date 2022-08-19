@@ -7,38 +7,28 @@
 
 import SwiftUI
 
-enum ChatShiftView: String, Identifiable {
-    case chat
-    
-    var id: String{
-        return rawValue
-    }
-}
-
 struct ChatPreview: View {
     @ObservedObject var authenticationViewModel: AuthenticationViewModel
-    @State private var chatShiftView : ChatShiftView?
     var chat: Chat
     var body: some View {
         let currentUser = authenticationViewModel.user?.email
         let chatContact = currentUser == chat.user1 ? chat.user2 : chat.user1
         let atIndex = chatContact.firstIndex(of: "@")!
-        HStack{
-            VStack(alignment: .leading){
-                Text(chatContact.prefix(upTo: atIndex))
-                    .font(.title3).bold()
-                Text(chatContact)
-                    .font(.caption)
-            }
-            .padding()
-            .sheet(item: $chatShiftView) { sheet in
-                switch sheet {
-                case .chat:
-                    MessageView(authenticationViewModel: authenticationViewModel)
+        NavigationLink(destination : MessageView(authenticationViewModel: authenticationViewModel)) {
+            HStack{
+                VStack(alignment: .leading){
+                    Text(chatContact.prefix(upTo: atIndex))
+                        .font(.title3).bold()
+                    Text(chatContact)
+                        .font(.caption)
                 }
+                .padding()
             }
+            .frame(maxWidth: .infinity,alignment: .leading)
         }
-        .frame(maxWidth: .infinity,alignment: .leading)
+        .foregroundColor(.black)
+        .navigationBarTitle("")
+        .navigationBarHidden(true)
     }
 }
 

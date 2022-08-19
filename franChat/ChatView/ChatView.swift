@@ -11,6 +11,7 @@ struct ChatView: View {
     @ObservedObject var authenticationViewModel: AuthenticationViewModel
     @StateObject var chatsManager = ChatsManager()
     var body: some View {
+        NavigationView {
             VStack {
                 VStack{
                     TitleRow(authenticationViewModel: authenticationViewModel)
@@ -27,9 +28,11 @@ struct ChatView: View {
                 }
                 .background(Color("Peach"))
             }
-            
         }
+        .navigationBarTitleDisplayMode(.inline)
+        .navigationBarBackButtonHidden(true)
     }
+}
 
 
 struct ChatView_Previews: PreviewProvider {
