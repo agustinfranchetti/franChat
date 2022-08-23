@@ -14,6 +14,7 @@ struct MessageBubble: View {
     
     var body: some View {
         let currentUser = authenticationViewModel.user?.email
+        if message.text != "" {
         VStack(alignment: message.sender == currentUser ? .trailing : .leading){
             HStack{
                 Text(message.text)
@@ -36,6 +37,7 @@ struct MessageBubble: View {
         }
         .frame(maxWidth: .infinity, alignment: message.sender == currentUser ? .trailing : .leading)
         .padding(message.sender == currentUser ? .trailing : .leading)
+    }
     }
 }
 
