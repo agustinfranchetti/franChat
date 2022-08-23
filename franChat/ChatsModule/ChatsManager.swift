@@ -39,6 +39,10 @@ class ChatsManager: ObservableObject {
     
     func startChat(user1: String, user2: String){
         do{
+            let chatsRef = db.collection("chats")
+            let chatsQuery = chatsRef.whereField("user1", in: [user1, user2])
+            //TODO: show as json or something
+            print("QUERYY", chatsQuery)
             let chatId = "\(UUID())"
             let newChat = Chat(id:chatId, user1: user1, user2: user2)
             try db.collection("chats").document(chatId).setData(from: newChat)

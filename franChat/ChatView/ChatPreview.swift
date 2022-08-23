@@ -17,6 +17,7 @@ struct ChatPreview: View {
         let chatId = chat.id
         let messagesManager = MessagesManager()
         let _ = messagesManager.getMessages(chatID: chatId)
+        if (currentUser == chat.user1 || currentUser == chat.user2){
         NavigationLink(destination : MessageView(authenticationViewModel: authenticationViewModel, messagesManager: messagesManager, chatId: chatId, chatContact: chatContact)) {
             HStack{
                 VStack(alignment: .leading){
@@ -33,6 +34,7 @@ struct ChatPreview: View {
         .foregroundColor(.black)
         .navigationBarTitle("")
         .navigationBarHidden(true)
+    }
     }
 }
 
