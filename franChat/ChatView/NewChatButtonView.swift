@@ -20,20 +20,22 @@ struct NewChatButtonView: View {
             } label: {
                 Image(systemName: "plus.circle.fill")
                     .foregroundColor(Color("Peach"))
-                    .font(.system(size: 60, weight: .bold))
+                    .font(.system(size: 55, weight: .bold))
         }
-            .padding(.trailing, 40)
+            .padding(.trailing, 30)
             
         }
         .sheet(isPresented: $showingNewChat) {
             SearchContactForNewChatView(authenticationViewModel: authenticationViewModel, chatsManager: chatsManager, isPresented: $showingNewChat)
-                
         }
     }
 }
 
 struct NewChatButtonView_Previews: PreviewProvider {
     static var previews: some View {
+        VStack{
+        Spacer()
         NewChatButtonView(authenticationViewModel: AuthenticationViewModel(), chatsManager: ChatsManager(), chat: Chat(id: "123", user1: "agustinfranchetti@gmail.com", user2: "marianochavez@gmail.com"))
+        }
     }
 }
